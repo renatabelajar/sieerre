@@ -343,6 +343,39 @@
             z-index: 2;
         }
 
+        /* Contact Info Box */
+        .contact-info-box {
+            background: var(--bg-light);
+            border-radius: 16px;
+            padding: 25px 30px;
+            margin-top: 30px;
+        }
+
+        .contact-info-box h4 {
+            font-family: var(--font-heading);
+            color: var(--soft-purple);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .contact-info-box p {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .contact-info-box a {
+            color: var(--soft-purple);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .contact-info-box a:hover {
+            text-decoration: underline;
+        }
+
         /* Footer */
         footer {
             background: white;
@@ -641,26 +674,39 @@
     <main id="contact" class="page">
         <section class="section-padding container">
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 50px;">
-                <div class="contact-container">
-                    <h2 style="font-family: var(--font-heading); margin-bottom: 20px;">Hubungi Kami</h2>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" required placeholder="email@contoh.com">
-                        </div>
-                        <div class="form-group">
-                            <label>Pesan</label>
-                            <textarea rows="5" required placeholder="Tuliskan pertanyaan Anda..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
-                    </form>
+                <div>
+                    <div class="contact-container">
+                        <h2 style="font-family: var(--font-heading); margin-bottom: 20px;">Hubungi Kami</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" required placeholder="email@contoh.com">
+                            </div>
+                            <div class="form-group">
+                                <label>Pesan</label>
+                                <textarea rows="5" required placeholder="Tuliskan pertanyaan Anda..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                        </form>
+                    </div>
+                    <div class="contact-info-box" style="max-width: 500px; margin: 20px auto 0;">
+                        <h4>Informasi Kontak</h4>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c6daa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            <a href="mailto:renataawibiologi@gmail.com">renataawibiologi@gmail.com</a>
+                        </p>
+                        <p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7c6daa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.62 2.82h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l.76-.76a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 17.5z"/></svg>
+                            <a href="https://wa.me/6281234567891" target="_blank">081234567891</a>
+                        </p>
+                    </div>
                 </div>
                 <div>
                     <h2 style="font-family: var(--font-heading); margin-bottom: 20px;">Lokasi Kami</h2>
-                    <p style="margin-bottom: 20px;">Jl. Lavender No. 123, Kebayoran Baru, Jakarta Selatan, Indonesia.</p>
+                    <p style="margin-bottom: 20px;">Jl. Sidomulyo No.1, Semaki, Kec. Umbulharjo, Kota Yogyakarta (SMA Negeri 8 Yogyakarta).</p>
                     <div style="width: 100%; height: 350px; border-radius: 20px; overflow: hidden;">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126906.126486872!2d106.7196772!3d-6.2233887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e3fa73%3A0x661e63fd29957777!2sJakarta%20Selatan!5e0!3m2!1sid!2sid!4v1690000000000!5m2!1sid!2sid" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0!2d110.3844!3d-7.8012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5786b0ba7027%3A0x5028b4b0c9b87a3f!2sSMA%20Negeri%208%20Yogyakarta!5e0!3m2!1sid!2sid!4v1717200000000!5m2!1sid!2sid" 
                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
                         </iframe>
                     </div>
@@ -742,9 +788,7 @@
                 </form>
             </div>
         </div>
-        <div class="container" style="text-align: center; border-top: 1px solid #eee; padding-top: 20px; font-size: 0.8rem; color: #888;">
-            <p>&copy; 2024 Sieerre Resto & Knit. All Rights Reserved. Dibuat dengan cinta di Indonesia.</p>
-        </div>
+        <div class="container" style="border-top: 1px solid #eee; padding-top: 20px; padding-bottom: 20px;"></div>
     </footer>
 
     <script>
@@ -799,11 +843,11 @@
             const name = document.getElementById('resName').value;
             const date = document.getElementById('resDate').value;
             const guests = document.getElementById('resGuest').value;
-            const package = document.getElementById('resPackage').value;
+            const pkg = document.getElementById('resPackage').value;
             
-            const text = `Halo Sieerre! Saya ingin reservasi:\n\nNama: ${name}\nWaktu: ${date}\nJumlah Tamu: ${guests} Orang\nPaket: ${package}`;
+            const text = `Halo Sieerre! Saya ingin reservasi:\n\nNama: ${name}\nWaktu: ${date}\nJumlah Tamu: ${guests} Orang\nPaket: ${pkg}`;
             const encodedText = encodeURIComponent(text);
-            const whatsappUrl = `https://wa.me/6281234567890?text=${encodedText}`; // Ganti dengan nomor real
+            const whatsappUrl = `https://wa.me/6281234567891?text=${encodedText}`;
             
             window.open(whatsappUrl, '_blank');
         });
